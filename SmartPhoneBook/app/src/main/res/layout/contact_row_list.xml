@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffff"
+    android:orientation="horizontal"
+    android:padding="8dp" >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/contactimage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_dimage" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/contactcheck"
+        android:layout_toRightOf="@+id/contactimage" >
+
+        <TextView
+            android:id="@+id/contactname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:text="Contact Name"
+            android:textColor="#e1007fff"
+            android:textIsSelectable="false"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/contactno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contactname"
+            android:singleLine="true"
+            android:text="09876543210"
+            android:textColor="@color/colorPrimary"
+            android:textIsSelectable="false"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/contactcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dp" />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_call"
+        android:icon="@drawable/ic_multi_popup"
+        android:title="Call"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_sms"
+        android:icon="@drawable/ic_multi_popup"
+        android:title="SMS"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/ic_multi_popup"
+        android:title="Edit Contact"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_send_by"
+        android:icon="@drawable/ic_multi_popup"
+        android:title="Send Contact By"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/action_bluetooth"
+                android:icon="@drawable/ic_multi_popup"
+                android:title="Blouetooth"
+                app:showAsAction="always|withText" />
+            <item
+                android:id="@+id/action_nfc"
+                android:icon="@drawable/ic_multi_popup"
+                android:title="NFC"
+                app:showAsAction="always|withText" />
+            <item
+                android:id="@+id/action_wifi"
+                android:icon="@drawable/ic_multi_popup"
+                android:title="Wifi"
+                app:showAsAction="always|withText" />
+
+        </menu>
+
+    </item>
+
+</menu>
